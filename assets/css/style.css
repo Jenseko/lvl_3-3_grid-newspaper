@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'cormoran';
+    src: url('../font/CormorantGaramond-Regular.ttf');
+}
+
+/* Farben: rgb(233, 233, 224), #333
+
+*/
+
+/* ============================================ */
+
+*{
+    margin: 0 1%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    color: #333;
+}
+
+/* ============================================ */
+
+body{
+    background-color: rgb(233, 233, 224);
+}
+
+/* ============================================ */
+
+header h1{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 span{
+    font-size: 3rem;
+    margin: 0;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border-top: #333 double 3px;
+    border-bottom: #333 double 3px;
+    padding: 3px 0px;
+}
+
+/* ============================================ */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 5vh);
+    gap: 10px;
+}
+
+main p{
+    font-size: 0.8rem;
+}
+
+main div{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+main div h2{
+    text-align: center;
+    padding-top: 8px;
+    font-size: 2rem;
+}
+
+main .sponsors{
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+main div h4{
+    text-align: center;
+    padding-top: 12px;
+}
+
+main .box2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+}
+
+main .box2 p{
+    padding-bottom: 10px;
+}
+
+main .box3{
+    grid-column: 1 / 2;
+    grid-row: 7 / 11;
+}
+
+main .box4{
+    grid-column: 2 / 3;
+    grid-row: 2 / 7;
+}
+main .box4 p{
+    padding-bottom: 20px;
+}
+
+main .box5{
+    grid-column: 2/ 3;
+    grid-row: 7 / 11;
+}
+
+main article h3{
+    font-size: 1.3rem;
+}
+
+/* ============================================ */
+
+section{
+    grid-column: 3 / 5;
+    grid-row: 2 / 10;
+}
+
+section img{
+    width: 100%;
+}
+
+section p{
+    font-style: italic;
+}
+
+/* ============================================ */
+
+main aside {
+    text-align: center;
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
+}
+
+main aside h1{
+    padding: 10px;
+    border-style: double;
+    font-size: 2.5rem;
+}
+
+main aside article{
+    border-style: double;
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+main aside article a{
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+}
+
+main aside div{
+    border-style: double;
+}
+
+main aside div img{
+    margin: 10px;
+    width: 80%;
+    filter: grayscale();
+}
+
